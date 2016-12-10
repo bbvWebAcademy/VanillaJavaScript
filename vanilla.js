@@ -19,8 +19,7 @@ button.addEventListener('click', function(){
 });
 
 removebutton.addEventListener('click', function(){
-  localStorage.removeItem('tasks');
  while (container.childElementCount)
-  container.removeChild(container.firstChild);
+  container.removeChild(container.lastChild);
 });
 
